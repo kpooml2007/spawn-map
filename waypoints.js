@@ -1,83 +1,105 @@
 var waypoints = [
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ], 
         "name": "Gerifer",
-        "id": "gerifer"
+        "id": "gerifer",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Fisherman",
-        "id": "fisherman"
+        "id": "fisherman",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Egap Seller",
-        "id": "egapseller"
+        "id": "egapseller",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Quests",
-        "id": "quests"
+        "id": "quests",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Stableman",
-        "id": "stableman"
+        "id": "stableman",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Scroll Seller",
-        "id": "sseller"
+        "id": "sseller",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Librarian",
-        "id": "librarian"
+        "id": "librarian",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Rockets",
-        "id": "rman"
+        "id": "rman",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Wool",
-        "id": "wool"
+        "id": "wool",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Bartender",
-        "id": "bartender"
+        "id": "bartender",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Witch(top fl)",
-        "id": "witch"
+        "id": "witch",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Miner",
-        "id": "miner"
+        "id": "miner",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Cartographer",
-        "id": "maps"
+        "id": "maps",
+        "type": "merchant"
     },
     { 
-        "classes": [ "waypoint", "merchant", "minfo" ],
         "name": "Carrot Seller",
-        "id": "carrots"
+        "id": "carrots",
+        "type": "merchant"
+    },
+    { 
+        "name": "Acropolis",
+        "id": "acropolis",
+        "type": "building"
+    },
+    { 
+        "name": "Bank",
+        "id": "bank",
+        "type": "building"
+    },
+    { 
+        "name": "Castle",
+        "id": "castle",
+        "type": "building"
+    },
+    { 
+        "name": "Church",
+        "id": "church",
+        "type": "building"
     }
 ];
+
+var classes = [ "waypoint", "merchant" ]
 
 var container = document.getElementById("img_container");
 for (var i = 0; i < waypoints.length; i++) {
     var child = document.createElement("div")
     child.id = waypoints[i].id
-    for (var l = 0; l < waypoints[i].classes.length; l++) {
-        child.classList.add(waypoints[i].classes[l])
-    }
+    child.classList.add("waypoint")
+    if (waypoints[i].type == "merchant") child.classList.add("merchant")
+    if (waypoints[i].type == "building") child.classList.add("building")
     child.textContent = waypoints[i].name;
     container.appendChild(child)
 }

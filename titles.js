@@ -1,3 +1,5 @@
+// change this to a UI and visual representation, add a function that adds an element in which you can see the items
+
 // Merchant titles
 document.getElementById("gerifer").title = "Wither s skull - 2 iris; \nLava bucket - 2 diamond; \n10 TNT - 9 diamonds;";
 document.getElementById("fisherman").title = "Castaway - 2 iris; \n32 Raw cod - 8 iron; \nRaw salmon - 8 iron;";
@@ -16,6 +18,10 @@ document.getElementById("quests").title = "Do quests for rewards";
 
 
 // Building titles
+document.getElementById("acropolis").title = "Buy goods from merchants that sell armour on the upper frool and weapons on lower";
+document.getElementById("bank").title = "Exchange your d-eggs to iris's and vice versa as well as buy some special items";
+document.getElementById("castle").title = "Loads of treasures lie here as well as a crate";
+document.getElementById("church").title = "Pray to God, ring a bell, say \"norse is better\" and move on";
 
 // document.getElementById("").title = "";
 console.log("Done adding titles")

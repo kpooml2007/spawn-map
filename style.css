@@ -18,6 +18,8 @@ body {
     display: inline-block; 
     position: absolute;
     color: white;
+    border: 1px solid yellowgreen;
+    padding: 5px;
 }
 
 .merchant {
@@ -26,10 +28,6 @@ body {
 
 .building {
     background-color: rgba(100, 100, 100, 0.7);
-}
-
-.minfo {
-    border: 1px solid yellowgreen;
 }
 
 #gerifer {
@@ -58,12 +56,12 @@ body {
 }
 
 #sseller {
-    left: 707px;
+    left: 695px;
     top: 584px;
 }
 
 #librarian {
-    left: 709px;
+    left: 700px;
     top: 550px;
 }
 
@@ -123,4 +121,31 @@ body {
 #church {
     left: 506px;
     top: 199px;
+}
+
+
+
+#imgType {
+    display: inline-block;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+#normal {
+    display: inline-block;
+    border: 1px solid red;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    padding: 3px;
+}
+
+#abstract {
+    display: inline-block;
+    border: 1px solid red;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    padding: 3px;
 }
