@@ -1,0 +1,126 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    background: grey;
+}
+
+#img {
+    width: 1250px;
+    height: auto;
+}
+
+#img_container {
+    width: 100%;
+    height: auto;
+}
+
+.waypoint {
+    display: inline-block; 
+    position: absolute;
+    color: white;
+}
+
+.merchant {
+    background-color: rgba(1, 1, 1, 0.7);
+}
+
+.building {
+    background-color: rgba(100, 100, 100, 0.7);
+}
+
+.minfo {
+    border: 1px solid yellowgreen;
+}
+
+#gerifer {
+    left: 133px;
+    top: 241px;
+}
+
+#fisherman {
+    left: 71px;
+    top: 382px;
+}
+
+#egapseller {
+    left: 355px;
+    top: 178px;
+}
+
+#quests {
+    left: 429px;
+    top: 316px;
+}
+
+#stableman {
+    left: 833px;
+    top: 701px;
+}
+
+#sseller {
+    left: 707px;
+    top: 584px;
+}
+
+#librarian {
+    left: 709px;
+    top: 550px;
+}
+
+#rman {
+    left: 1063px;
+    top: 342px;
+}
+
+#wool {
+    left: 986px;
+    top: 366px;
+}
+
+#bartender {
+    left: 858px;
+    top: 339px;
+}
+
+#witch {
+    left: 77px;
+    top: 79px;
+}
+
+#miner {
+    left: 1055px;
+    top: 695px;
+}
+
+#maps {
+    left: 968px;
+    top: 402px;
+}
+
+#carrots {
+    left: 348px;
+    top: 216px;
+}
+
+
+
+
+#acropolis {
+    left: 692px;
+    top: 272px;
+}
+
+#bank {
+    left: 494px;
+    top: 598px;
+}
+
+#castle {
+    left: 101px;
+    top: 677px;
+}
+
+#church {
+    left: 506px;
+    top: 199px;
+}
